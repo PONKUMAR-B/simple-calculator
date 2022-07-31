@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Simple calculator</h2>
+    <div id="calci">
+        <form name="form1">
+            <input type="text" id="result" name="results">
+            <br><br>
+
+            <input type="button" id="operator" value="^" onclick="form1.results.value =form1.results.value+'**'"> 
+            <input type="button" id="operator" value="%" onclick="form1.results.value = form1.results.value+'%'"> 
+            <input type="button" id="operator" value="/" onclick="form1.results.value = form1.results.value+'/'"> 
+            <input type="button" id="operator" value="C" onclick="form1.results.value = ''"> 
+            <br><br>
+
+            <input type="button" id="a1" value="1" onclick="form1.results.value = form1.results.value+'1'"> 
+            <input type="button" id="a1" value="2" onclick="form1.results.value = form1.results.value+'2'"> 
+            <input type="button" id="a1" value="3" onclick="form1.results.value = form1.results.value+'3'"> 
+            <input type="button" id="operator" value="+" onclick="form1.results.value = form1.results.value+'+'"> 
+            <br><br>
+
+            <input type="button" id="a1" value="4" onclick="form1.results.value = form1.results.value+'4'"> 
+            <input type="button" id="a1" value="5" onclick="form1.results.value = form1.results.value+'5'"> 
+            <input type="button" id="a1" value="6" onclick="form1.results.value = form1.results.value+'6'"> 
+            <input type="button" id="operator" value="-" onclick="form1.results.value = form1.results.value+'-'"> 
+            <br><br>
+
+            <input type="button" id="a1" value="7" onclick="form1.results.value = form1.results.value+'7'"> 
+            <input type="button" id="a1" value="8" onclick="form1.results.value = form1.results.value+'8'"> 
+            <input type="button" id="a1" value="9" onclick="form1.results.value = form1.results.value+'9'"> 
+            <input type="button" id="operator" value="*" onclick="form1.results.value = form1.results.value+'*'"> 
+            <br><br>
+
+            <input type="button" id="a1" value="00" onclick="form1.results.value = form1.results.value+'00'"> 
+            <input type="button" id="a1" value="0" onclick="form1.results.value = form1.results.value+'0'"> 
+            <input type="button" id="a1" value="." onclick="form1.results.value = form1.results.value+'.'"> 
+            <input type="button" id="operator" value="=" onclick="form1.results.value = eval(form1.results.value)"> 
+            <br><br>
+
+            
+        </form>
+    </div>
+</body>
+</html>
