@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <link rel="stylesheet" href="demo.css">
-    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <h2>Simple calculator</h2>
+<body> 
     <div id="calci">
-        <form name="form1">
-            <input type="text" id="result" name="results">
+        <h1>Simple calculator</h1>
+        <form name="form1" class="container">
+            <input type="text" id="result" name="results" placeholder="8 8 8 8 8 8 8 8 8 8 8 8 8 8 8   ">
             <br><br>
 
             <input type="button" id="operator" value="^" onclick="form1.results.value =form1.results.value+'**'"> 
@@ -41,7 +41,7 @@
 
             <input type="button" id="a1" value="00" onclick="form1.results.value = form1.results.value+'00'"> 
             <input type="button" id="a1" value="0" onclick="form1.results.value = form1.results.value+'0'"> 
-            <input type="button" id="a1" value="." onclick="form1.results.value = form1.results.value+'.'"> 
+            <input type="button" id="a1" value="." onclick="form1.results.value = form1.results.value+'.'" style="font-size: large; margin-top: -10px;"> 
             <input type="button" id="operator" value="=" onclick="form1.results.value = eval(form1.results.value)"> 
             <br><br>
 
